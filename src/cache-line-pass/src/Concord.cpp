@@ -178,11 +178,11 @@ namespace
 
               int cnt = loopBodyUnrollSize / estimateLoopBodySize(currentLoop, LI);
 
-              UnrollLoopOptions ULO{
-                .AllowRuntime = true,
-                .AllowExpensiveTripCount = true,
-                .UnrollRemainder = true,
-              };
+              UnrollLoopOptions ULO;
+	      
+              ULO.AllowRuntime = true;
+              ULO.AllowExpensiveTripCount = true;
+              ULO.UnrollRemainder = true;
               ULO.Count = cnt;
 
               AssumptionCache* AC = &getAnalysis<AssumptionCacheTracker>(F).getAssumptionCache(F);

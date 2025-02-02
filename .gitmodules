@@ -1,7 +1,3 @@
-[submodule "benchmarks/leveldb/leveldb"]
-	path = benchmarks/leveldb/leveldb
-	url = git@github.com:m8/leveldb.git
-	branch = concord
 [submodule "concord-shinjuku"]
 	path = concord-shinjuku
 	url = git@github.com:berghetti/concord-shinjuku.git

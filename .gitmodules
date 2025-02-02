@@ -9,6 +9,3 @@
 [submodule "benchmarks/overhead"]
 	path = benchmarks/overhead
 	url = git@github.com:m8/concord-overhead-bench.git
-[submodule "benchmarks/leveldb/leveldb"]
-	path = benchmarks/leveldb/leveldb
-	url = git@github.com:berghetti/concord_leveldb.git
